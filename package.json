@@ -4,7 +4,8 @@
   "description": "testing node apps",
   "main": "index.js",
   "scripts": {
-    "test": "mocha **/*.test.js"
+    "test": "mocha **/*.test.js",
+    "test-new": "nodemon --exec \"npm test\""
   },
   "repository": {
     "type": "git",
