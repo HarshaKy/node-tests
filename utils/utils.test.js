@@ -14,6 +14,20 @@ it('should square the input number', () => {
   expect(res).toBe(9).toBeA('number');
 });
 
+it('should asyncAdd two numbers', (done) => {
+  utils.asyncAdd(4, 3, (sum) => {
+    expect(sum).toBe(7).toBeA('number');
+    done();
+  });
+});
+
+it('should asyncSquare two numbers', (done) => {
+  utils.asyncSquare(8, (square) => {
+    expect(square).toBe(64);
+    done();
+  });
+});
+
 it('should set firstName and lastName', () => {
   var user = {location: 'India', age: 21};
   var res = utils.setName(user, 'Harsha Ky');
