@@ -19,6 +19,7 @@
   "homepage": "https://github.com/HarshaKy/node-tests#readme",
   "dependencies": {},
   "devDependencies": {
+    "expect": "^1.20.2",
     "mocha": "^5.2.0"
   }
 }
